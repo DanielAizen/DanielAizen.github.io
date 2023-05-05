@@ -1,5 +1,7 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box } from "@mui/material";
+import { fadeInDownBig } from "react-animations";
 import styled, { keyframes } from "styled-components";
+// import { fadeInDownBig } from "react-animations";
 
 const Animation = {
   Background: styled.div`
@@ -21,12 +23,15 @@ const Animation = {
     }
   `,
 };
+
+const fadeInDown = keyframes`${fadeInDownBig}`
+const FadeDownDiv = styled.div` animation: 2s ${fadeInDown}`
 export const Body = () => {
   return (
     <div>
       <Animation.Background>
         <Box sx={{ height: "100%", display: "flex", justifyContent: 'center', alignItems: 'center' }}>
-          {"Hey my name is daniel aizenband - To be continued"}
+          <FadeDownDiv> Hey my name is daniel aizenband - To be continued</FadeDownDiv>
           {/* <Grid container justifyContent="center" alignContent="center">
             
           </Grid> */}
