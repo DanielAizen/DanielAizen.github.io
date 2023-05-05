@@ -1,5 +1,14 @@
-import { Box, AppBar, Typography, SvgIcon, Link } from "@mui/material";
+import { Box, AppBar, Typography, SvgIcon, Link, Grid } from "@mui/material";
 import CopyrightIcon from "@mui/icons-material/Copyright";
+import styled from "styled-components";
+
+const Styles = {
+  Link: styled.a`
+    transition: color 0.5s linear;
+    text-decoration: none;
+    color: white;
+  `,
+};
 
 export const Footer = () => {
   return (
@@ -16,15 +25,23 @@ export const Footer = () => {
         position="static"
         sx={{ height: 30, position: "fixed", bottom: 0 }}
       >
-        <Typography align="left">
-          Build by: Daniel Aizenband
-          <SvgIcon sx={{ fontSize: "small" }}>
-            <CopyrightIcon />
-          </SvgIcon> 
-        </Typography>
-        <Typography align="right">
-          <Link href="https://github.com/DanielAizen/DanielAizen.github.io">Source Code</Link>
-        </Typography>
+        <Grid container columns={16} spacing={2}>
+          <Grid item xs={8}>
+            <Typography>
+              Build by: Daniel Aizenband
+              <SvgIcon sx={{ fontSize: "small" }}>
+                <CopyrightIcon />
+              </SvgIcon>
+            </Typography>
+          </Grid>
+          <Grid item xs={8}>
+            <Typography sx={{ color: "white", textAlign: "end" }}>
+              <Styles.Link href="https://github.com/DanielAizen/DanielAizen.github.io">
+                Source Code
+              </Styles.Link>
+            </Typography>
+          </Grid>
+        </Grid>
       </AppBar>
     </Box>
   );
