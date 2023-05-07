@@ -172,8 +172,6 @@ const Animation = {
 
 const Stars = () => {
   const starCount = 350;
-
-  // Create an array of Star components with incrementing index values
   const stars = Array(starCount)
     .fill(0)
     .map((_, i) => {
