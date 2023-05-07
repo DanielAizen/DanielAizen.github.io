@@ -1,5 +1,4 @@
-import { AppBar, Box, IconButton, Toolbar } from "@mui/material";
-// import MenuIcon from '@mui/icons-material/Menu';
+import { AppBar, Box, Toolbar } from "@mui/material";
 
 export const Header = () => {
   return (
