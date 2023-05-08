@@ -1,9 +1,9 @@
-import { AppBar, Box, Toolbar } from "@mui/material";
+import { Box, Toolbar } from "@mui/material";
 
 export const Header = () => {
   return (
-    <Box sx={{ height: 50, backgroundColor: "primary.dark" }}>
-      <AppBar position="static" sx={{ height: 40 }}>
+    <Box sx={{ height: 30, backgroundColor: "primary.dark" }}>
+      
         <Toolbar>
            {/* <IconButton
             size="medium"
@@ -15,7 +15,6 @@ export const Header = () => {
               <MenuIcon />
           </IconButton>  */}
         </Toolbar>
-      </AppBar>
     </Box>
   );
 };

@@ -129,6 +129,29 @@ const Animation = {
     .button-container:hover .icon {
       display: none;
     }
+
+    @media only screen and (max-device-width: 820px) {
+        .button-container {
+          height: 5rem;
+          width: 5rem;
+          margin: 0 0.8rem;
+        }
+    
+        .button {
+          height: 5rem;
+          width: 5rem;
+        }
+    
+        .icon {
+          height: 4rem;
+          width: 4rem;
+          padding: 0.5rem;
+        }
+    
+        .icon_title {
+          font-size: 1rem;
+        }
+      }
   `,
   Background: styled.div`
     position: absolute;
@@ -192,7 +215,7 @@ const Content = {
     font-family: "Times New Roman", Times, serif;
     margin: 10px;
     @media only screen and (max-device-width: 820px) {
-      font-size: 25px;
+      font-size: 2.25rem;
     }
   `,
   Titles: styled.span`
@@ -201,6 +224,9 @@ const Content = {
     font-weight: normal;
     color: white;
     opacity: 0.5;
+    @media only screen and (max-device-width: 820px) {
+        font-size: 1rem;
+      }
   `,
 };
 
