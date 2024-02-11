@@ -249,7 +249,7 @@ export const Body = () => {
       label: "Email",
     },
     {
-      href: "https://drive.google.com/file/d/1OVksmInfVZHrEr73LNHKqjigJ07vBx3_/view?usp=share_link",
+      href: "https://drive.google.com/file/d/19PUZH-KvmayWiZ14bBSF9LEkgQp2Kz2Q/view?usp=sharing",
       icon: <CV />,
       label: "Open CV",
     },
