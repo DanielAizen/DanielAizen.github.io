@@ -1,4 +1,4 @@
-import { Box, Typography, SvgIcon, Grid } from "@mui/material";
+import { Box, SvgIcon } from "@mui/material";
 import CopyrightIcon from "@mui/icons-material/Copyright";
 import styled from "styled-components";
 
