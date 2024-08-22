@@ -3,10 +3,10 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sky } from "@react-three/drei";
 import InteractiveBox from "./InteractiveBox";
 import { Text } from "@react-three/drei";
-// import { CV } from "./../assests/CV";
-// import { Email } from "./../assests/Email";
-// import { Github } from "./../assests/Github";
-// import { Linkedin } from "./../assests/Linkedin";
+import gmailImage from '../assests/gmail.png';
+import linkedInImage from '../assests/linkedIn.png';
+import githubImage from '../assests/github.png';
+import cvImage from '../assests/cv.jpeg';
 
 const PortfolioScene: React.FC = () => {
   return (
@@ -31,7 +31,7 @@ const PortfolioScene: React.FC = () => {
         color="red"
         label="Email"
         onClick={() => window.open("mailto:aiz.dani@gmail.com", "_blank")}
-        // svg={<Email />}
+        textureUrl={gmailImage}
       />
 
       {/* LinkedIn Box */}
@@ -45,7 +45,7 @@ const PortfolioScene: React.FC = () => {
             "_blank"
           )
         }
-        // svg={<Linkedin />}
+        textureUrl={linkedInImage}
       />
 
       {/* GitHub Box */}
@@ -54,7 +54,8 @@ const PortfolioScene: React.FC = () => {
         color="black"
         label="GitHub"
         onClick={() => window.open("https://github.com/DanielAizen", "_blank")}
-        // svg={<Github />}
+        textureUrl={githubImage}
+
       />
 
       {/* CV Box */}
@@ -68,7 +69,8 @@ const PortfolioScene: React.FC = () => {
             "_blank"
           )
         }
-        // svg={<CV />}
+        textureUrl={cvImage}
+
       />
     </Canvas>
   );
